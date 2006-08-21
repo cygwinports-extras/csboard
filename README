@@ -1,0 +1,108 @@
+csboard
+------------------------------------------
+CsBoard is a small GUI for gnuchess. It is written in C# and uses
+gtk-sharp and mono. It is simple, but allows you just play chess with
+SVG graphics and native look a nd desktop theme usage. CsBoard has very
+detailed user documentation and fully integrated w ith GNOME desktop
+environment for many things, like support of mime-types.
+
+Runtime requirements:
+  cygwin-1.5.21-1
+  gconf-sharp2-2.8.3-1
+  glade-sharp2-2.8.3-1
+  gnuchess
+  gtk-sharp2-2.8.3-1
+  mono-1.1.16.1-1
+  rsvg-sharp2-2.8.3-1
+
+Build requirements:
+(besides corresponding -devel packages)
+  cygwin-1.5.21-1
+  autoconf2.5-2.59-2
+  automake1.9-1.9.6-1
+  binutils-20050610-1
+  cygport-0.2.5-1
+  gawk-3.1.5-2
+  gcc-core-3.4.4-1
+  make-3.81-1
+  pkg-config-0.20-1
+  sed-4.1.5-1
+
+Canonical website:
+  http://csboard.berlios.de/
+
+Canonical download:
+  http://download.berlios.de/csboard/
+
+-------------------------------------------
+
+Build instructions:
+  unpack csboard-0.6-X-src.tar.bz2
+    if you use setup to install this src package, it will be
+	 unpacked under /usr/src automatically
+  cd /usr/src
+  cygport ./csboard-0.6-X.cygport all
+
+This will create:
+  /usr/src/csboard-0.6-X-src.tar.bz2
+  /usr/src/csboard-0.6-X.tar.bz2
+
+-------------------------------------------
+
+Files included in the binary package:
+
+  /etc/gconf/schemas/csboard.schemas
+  /etc/postinstall/csboard.sh
+  /etc/preremove/csboard.sh
+  /usr/bin/csboard
+  /usr/share/applications/csboard.desktop
+  /usr/share/csboard/csboard.exe
+  /usr/share/csboard/images/black-bishop.svg
+  /usr/share/csboard/images/black-king.svg
+  /usr/share/csboard/images/black-knight.svg
+  /usr/share/csboard/images/black-pawn.svg
+  /usr/share/csboard/images/black-queen.svg
+  /usr/share/csboard/images/black-rook.svg
+  /usr/share/csboard/images/white-bishop.svg
+  /usr/share/csboard/images/white-king.svg
+  /usr/share/csboard/images/white-knight.svg
+  /usr/share/csboard/images/white-pawn.svg
+  /usr/share/csboard/images/white-queen.svg
+  /usr/share/csboard/images/white-rook.svg
+  /usr/share/csboard/resource/csboard.glade
+  /usr/share/doc/Cygwin/csboard-0.6.README
+  /usr/share/doc/csboard-0.6/AUTHORS
+  /usr/share/doc/csboard-0.6/COPYING
+  /usr/share/doc/csboard-0.6/ChangeLog
+  /usr/share/doc/csboard-0.6/INSTALL
+  /usr/share/doc/csboard-0.6/NEWS
+  /usr/share/doc/csboard-0.6/README
+  /usr/share/doc/csboard-0.6/TODO
+  /usr/share/gnome/help/csboard/C/csboard.xml
+  /usr/share/gnome/help/csboard/C/figures/app.png
+  /usr/share/gnome/help/csboard/C/figures/bishop.png
+  /usr/share/gnome/help/csboard/C/figures/book.png
+  /usr/share/gnome/help/csboard/C/figures/castle-after.png
+  /usr/share/gnome/help/csboard/C/figures/castle-before.png
+  /usr/share/gnome/help/csboard/C/figures/en_passant.png
+  /usr/share/gnome/help/csboard/C/figures/king.png
+  /usr/share/gnome/help/csboard/C/figures/knight.png
+  /usr/share/gnome/help/csboard/C/figures/pawn.png
+  /usr/share/gnome/help/csboard/C/figures/queen.png
+  /usr/share/gnome/help/csboard/C/figures/rook.png
+  /usr/share/gnome/help/csboard/C/figures/start_position.png
+  /usr/share/gnome/help/csboard/C/legal.xml
+  /usr/share/locale/ru/LC_MESSAGES/csboard.mo
+  /usr/share/omf/csboard/csboard-C.omf
+  /usr/share/pixmaps/csboard.png
+
+------------------
+
+Port Notes:
+
+----- version 0.6-1 -----
+Initial release for Cygwin.
+
+
+Cygwin port maintained by:
+http://cygwinports.dotsrc.org/

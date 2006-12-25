@@ -7,26 +7,28 @@ detailed user documentation and fully integrated w ith GNOME desktop
 environment for many things, like support of mime-types.
 
 Runtime requirements:
-  cygwin-1.5.21-1
-  gconf-sharp2-2.8.3-1
-  glade-sharp2-2.8.3-1
+  cygwin-1.5.23-2
+  gconf-sharp2-2.16.0-1
+  glade-sharp2-2.10.0-1
+  glib-sharp2-2.10.0-1
+  gnome-vfs-sharp2-2.16.0-1
   gnuchess
-  gtk-sharp2-2.8.3-1
-  mono-1.1.16.1-1
-  rsvg-sharp2-2.8.3-1
+  gtk-sharp2-2.10.0-1
+  mono-1.2.2.1-1
+  rsvg-sharp2-2.16.0-1
 
 Build requirements:
 (besides corresponding -devel packages)
-  cygwin-1.5.21-1
-  autoconf2.5-2.59-2
-  automake1.9-1.9.6-1
-  binutils-20050610-1
-  cygport-0.2.5-1
-  gawk-3.1.5-2
-  gcc-core-3.4.4-1
+  cygwin-1.5.23-2
+  autoconf2.5-2.60-2
+  automake1.9-1.9.6-2
+  binutils-20060817-1
+  cygport-0.2.7-1
+  gawk-3.1.5-4
+  gcc-core-3.4.4-3
   make-3.81-1
-  pkg-config-0.20-1
-  sed-4.1.5-1
+  pkg-config-0.21-1
+  sed-4.1.5-2
 
 Canonical website:
   http://csboard.berlios.de/
@@ -37,15 +39,15 @@ Canonical download:
 -------------------------------------------
 
 Build instructions:
-  unpack csboard-0.6-X-src.tar.bz2
+  unpack csboard-0.7-X-src.tar.bz2
     if you use setup to install this src package, it will be
 	 unpacked under /usr/src automatically
   cd /usr/src
-  cygport ./csboard-0.6-X.cygport all
+  cygport ./csboard-0.7-X.cygport all
 
 This will create:
-  /usr/src/csboard-0.6-X-src.tar.bz2
-  /usr/src/csboard-0.6-X.tar.bz2
+  /usr/src/csboard-0.7-X-src.tar.bz2
+  /usr/src/csboard-0.7-X.tar.bz2
 
 -------------------------------------------
 
@@ -55,7 +57,9 @@ Files included in the binary package:
   /etc/postinstall/csboard.sh
   /etc/preremove/csboard.sh
   /usr/bin/csboard
+  /usr/bin/csviewer
   /usr/share/applications/csboard.desktop
+  /usr/share/applications/csviewer.desktop
   /usr/share/csboard/csboard.exe
   /usr/share/csboard/images/black-bishop.svg
   /usr/share/csboard/images/black-king.svg
@@ -69,15 +73,17 @@ Files included in the binary package:
   /usr/share/csboard/images/white-pawn.svg
   /usr/share/csboard/images/white-queen.svg
   /usr/share/csboard/images/white-rook.svg
+  /usr/share/csboard/plugins/PGNPrinterPlugin.dll
+  /usr/share/csboard/plugins/PGNUrlLoader.dll
   /usr/share/csboard/resource/csboard.glade
-  /usr/share/doc/Cygwin/csboard-0.6.README
-  /usr/share/doc/csboard-0.6/AUTHORS
-  /usr/share/doc/csboard-0.6/COPYING
-  /usr/share/doc/csboard-0.6/ChangeLog
-  /usr/share/doc/csboard-0.6/INSTALL
-  /usr/share/doc/csboard-0.6/NEWS
-  /usr/share/doc/csboard-0.6/README
-  /usr/share/doc/csboard-0.6/TODO
+  /usr/share/doc/Cygwin/csboard-0.7.README
+  /usr/share/doc/csboard-0.7/AUTHORS
+  /usr/share/doc/csboard-0.7/COPYING
+  /usr/share/doc/csboard-0.7/ChangeLog
+  /usr/share/doc/csboard-0.7/INSTALL
+  /usr/share/doc/csboard-0.7/NEWS
+  /usr/share/doc/csboard-0.7/README
+  /usr/share/doc/csboard-0.7/TODO
   /usr/share/gnome/help/csboard/C/csboard.xml
   /usr/share/gnome/help/csboard/C/figures/app.png
   /usr/share/gnome/help/csboard/C/figures/bishop.png
@@ -92,13 +98,19 @@ Files included in the binary package:
   /usr/share/gnome/help/csboard/C/figures/rook.png
   /usr/share/gnome/help/csboard/C/figures/start_position.png
   /usr/share/gnome/help/csboard/C/legal.xml
+  /usr/share/locale/cs/LC_MESSAGES/csboard.mo
   /usr/share/locale/ru/LC_MESSAGES/csboard.mo
+  /usr/share/locale/te/LC_MESSAGES/csboard.mo
+  /usr/share/locale/tr/LC_MESSAGES/csboard.mo
   /usr/share/omf/csboard/csboard-C.omf
   /usr/share/pixmaps/csboard.png
 
 ------------------
 
 Port Notes:
+
+----- version 0.7-1 -----
+Version bump, built for mono-1.2 and gtk-sharp-2.10/gnome-sharp-2.16.
 
 ----- version 0.6-1 -----
 Initial release for Cygwin.

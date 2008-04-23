@@ -1,0 +1,5 @@
+inherit mono gnome2
+
+DESCRIPTION="GNOME Chess game"
+HOMEPAGE="http://csboard.berlios.de/"
+SRC_URI="mirror://berlios/${PN}/${P}.tar.gz"

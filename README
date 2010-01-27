@@ -7,26 +7,25 @@ detailed user documentation and fully integrated w ith GNOME desktop
 environment for many things, like support of mime-types.
 
 Runtime requirements:
-  gconf-sharp2-2.20.1-1
-  glade-sharp2-2.12.1-1
-  glib-sharp2-2.12.1-1
-  gnome-vfs-sharp2-2.20.1-1
   gnuchess
-  gtk-sharp2-2.12.1-1
-  mono-1.9.1-1
-  rsvg2-sharp-2.20.1-1
+  mono-2.4.3.1-1
+  mono-gconf-sharp2.0-2.24.1-1
+  mono-glade-sharp2.0-2.12.9-1
+  mono-glib-sharp2.0-2.12.9-1
+  mono-gnome-print-sharp2.18-2.26.0-1
+  mono-gnome-vfs-sharp2.0-2.24.1-1
+  mono-gtk-sharp2.0-2.12.9-1
+  mono-pango-sharp2.0-2.12.9-1
+  mono-rsvg2-sharp2.18-2.26.0-1
 
 Build requirements:
 (besides corresponding -devel packages)
-  cygwin-1.5.25-11
-  autoconf2.5-2.61-1
-  automake1.9-1.9.6-2
-  binutils-20060817-1
-  cygport-0.3.9-1
-  gawk-3.1.6-1
-  gcc-core-3.4.4-3
-  make-3.81-1
-  pkg-config-0.21-1
+  autoconf2.5-2.65-1
+  automake1.9-1.9.6-10
+  cygport-0.9.80-1
+  gawk-3.1.7-1
+  make-3.81-2
+  pkg-config-0.23b-10
   sed-4.1.5-2
 
 Canonical website:
@@ -50,83 +49,10 @@ This will create:
 
 -------------------------------------------
 
-Files included in the binary package:
-
-  /etc/gconf/schemas/csboard.schemas
-  /etc/postinstall/csboard.sh
-  /etc/preremove/csboard.sh
-  /usr/bin/csboard
-  /usr/bin/csplayer
-  /usr/bin/csviewer
-  /usr/share/applications/csboard.desktop
-  /usr/share/applications/csplayer.desktop
-  /usr/share/applications/csviewer.desktop
-  /usr/share/csboard/csboard.exe
-  /usr/share/csboard/db4o.dll
-  /usr/share/csboard/images/black-bishop.svg
-  /usr/share/csboard/images/black-king.svg
-  /usr/share/csboard/images/black-knight.svg
-  /usr/share/csboard/images/black-pawn.svg
-  /usr/share/csboard/images/black-queen.svg
-  /usr/share/csboard/images/black-rook.svg
-  /usr/share/csboard/images/computer.png
-  /usr/share/csboard/images/white-bishop.svg
-  /usr/share/csboard/images/white-king.svg
-  /usr/share/csboard/images/white-knight.svg
-  /usr/share/csboard/images/white-pawn.svg
-  /usr/share/csboard/images/white-queen.svg
-  /usr/share/csboard/images/white-rook.svg
-  /usr/share/csboard/plugins/EcoDBPlugin.dll
-  /usr/share/csboard/plugins/GameDbPlugin.dll
-  /usr/share/csboard/plugins/PGNPrinterPlugin.dll
-  /usr/share/csboard/plugins/PGNUrlLoader.dll
-  /usr/share/csboard/resource/csboard.glade
-  /usr/share/csboard/resource/csviewer.glade
-  /usr/share/csboard/resource/eco.pgn
-  /usr/share/doc/Cygwin/csboard-0.9.README
-  /usr/share/doc/csboard-0.9/AUTHORS
-  /usr/share/doc/csboard-0.9/COPYING
-  /usr/share/doc/csboard-0.9/ChangeLog
-  /usr/share/doc/csboard-0.9/INSTALL
-  /usr/share/doc/csboard-0.9/NEWS
-  /usr/share/doc/csboard-0.9/README
-  /usr/share/doc/csboard-0.9/TODO
-  /usr/share/gnome/help/csboard/C/csboard.xml
-  /usr/share/gnome/help/csboard/C/figures/app.png
-  /usr/share/gnome/help/csboard/C/figures/bishop.png
-  /usr/share/gnome/help/csboard/C/figures/book.png
-  /usr/share/gnome/help/csboard/C/figures/castle-after.png
-  /usr/share/gnome/help/csboard/C/figures/castle-before.png
-  /usr/share/gnome/help/csboard/C/figures/en_passant.png
-  /usr/share/gnome/help/csboard/C/figures/king.png
-  /usr/share/gnome/help/csboard/C/figures/knight.png
-  /usr/share/gnome/help/csboard/C/figures/pawn.png
-  /usr/share/gnome/help/csboard/C/figures/queen.png
-  /usr/share/gnome/help/csboard/C/figures/rook.png
-  /usr/share/gnome/help/csboard/C/figures/start_position.png
-  /usr/share/gnome/help/csboard/C/legal.xml
-  /usr/share/locale/cs/LC_MESSAGES/csboard.mo
-  /usr/share/locale/ru/LC_MESSAGES/csboard.mo
-  /usr/share/locale/te/LC_MESSAGES/csboard.mo
-  /usr/share/locale/tr/LC_MESSAGES/csboard.mo
-  /usr/share/omf/csboard/csboard-C.omf
-  /usr/share/pixmaps/csboard.png
-
-------------------
-
 Port Notes:
 
------ version 0.9-2 -----
-Rebuilt for rsvg2-sharp-2.20.
-
------ version 0.9-1 -----
-Version bump.
-
------ version 0.7-1 -----
-Version bump, built for mono-1.2 and gtk-sharp-2.10/gnome-sharp-2.16.
-
------ version 0.6-1 -----
-Initial release for Cygwin.
+----- version 0.9-3 -----
+Initial release for Cygwin 1.7.
 
 
 Cygwin port maintained by:

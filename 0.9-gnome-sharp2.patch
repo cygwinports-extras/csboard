@@ -20,3 +20,14 @@
  gconf-sharp-2.0 >= $GTKSHARP_REQUIRED_VERSION
  )
  
+--- origsrc/csboard-0.9/src/viewer/plugins/printer/Makefile.am	2007-09-03 22:36:48.000000000 -0500
++++ src/csboard-0.9/src/viewer/plugins/printer/Makefile.am	2010-01-26 20:35:43.492706600 -0600
+@@ -5,7 +5,7 @@ CSFLAGS = 		\
+ 
+ PACKAGE_DEPENDS =							\
+ 	-pkg:gtk-sharp-2.0						\
+-	-pkg:gnome-sharp-2.0
++	-pkg:gnome-print-sharp-2.18
+ 
+ ASSEMBLIES = 					\
+ 	$(PACKAGE_DEPENDS)	 		\

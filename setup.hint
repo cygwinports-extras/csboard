@@ -1,5 +1,5 @@
 category: Games Gnome
-requires: gconf-sharp2 glade-sharp2 glib-sharp2 gnome-vfs-sharp2 gtk-sharp2 rsvg2-sharp mono gnuchess
+requires: gdk-pixbuf2.0-svg gnuchess mono mono-gconf-sharp2.0 mono-glade-sharp2.0 mono-glib-sharp2.0 mono-gnome-print-sharp2.18 mono-gnome-vfs-sharp2.0 mono-gtk-sharp2.0 mono-rsvg2-sharp2.0
 sdesc: "GNOME Chess game"
 ldesc: "CsBoard is a small GUI for gnuchess. It is written in C# and uses
 gtk-sharp and mono. It is simple, but allows you just play chess with
